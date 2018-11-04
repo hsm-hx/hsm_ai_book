@@ -1,7 +1,10 @@
 PREDEF:
 
 CHAPS:
-  - hsm_ai.re
+  - c01-about.re
+  - c02-markov.re
+  - c03-conv.re
+  - c04-unity.re
 
 APPENDIX:
 
