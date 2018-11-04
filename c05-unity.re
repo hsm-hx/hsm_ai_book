@@ -52,3 +52,11 @@ VRoidStudioでは、元あるモデルから顔、体型、髪型を編集する
 このモデルをUnityで扱えるようVRm形式でエクスポートします。『撮影・エクスポート』タブから、左パネル下部のエクスポートをクリックして必要な箇所を入力しエクスポートします。こうして、VRoidStudioによる3Dモデルの準備が完了しました。
 
 == UnityでVRMモデルを動かす
+
+UnityでVRM形式の3Dモデルを動かすには、UniVRMというUnity用の拡張パッケージを導入します。GitHub@<fn>{univrm}よりunitypackageをダウンロードし、UnityにインポートすることでVRMファイルを読み込むようになります。プロジェクトにVRMモデルをインポートするには、UniVRMを導入した後UnityのウィンドウにVRMファイルをD&Dします。
+//footnote[univrm][https://github.com/dwango/UniVRM]
+
+モーションとして、今回はUnity公式がアセットストアで配布している"Unity-Chan!" Model@<fn>{unity-chan}に付属のモーションを利用します。
+//footnote[unity-chan][https://assetstore.unity.com/packages/3d/characters/unity-chan-model-18705]
+
+VRMファイルとアセットストアからプロジェクトにインポートした後、Projectタブ上のVRoidオブジェクトをSceneに配置します。HierarchyタブからVRoidをクリックし、Inspector中のAnimatorカラム最上部ControllerにUnityChanActionCheckを指定してプレイすることでVRoidStudioで作成したモデルにアニメーションを付けることができます。
